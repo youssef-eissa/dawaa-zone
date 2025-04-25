@@ -23,7 +23,7 @@ function CartBTN() {
 
   return (
     <div ref={cartRef} className={styles.cartBTN}>
-        <button onClick={() => setOpenCart(!openCart)}>
+        <button aria-label='cart' onClick={() => setOpenCart(!openCart)}>
         <CiShoppingCart size={20} />
         </button>
 

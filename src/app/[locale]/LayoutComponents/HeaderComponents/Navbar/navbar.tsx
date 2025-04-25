@@ -24,7 +24,7 @@ function Navbar() {
         placeholder={t('navbar.searchPlaceholder')}/>
       </div>
       <div>
-        <Link href={'tel:+20123456789'}><IoCallOutline size={20}/></Link>
+        <Link aria-label='call' href={'tel:+20123456789'}><IoCallOutline size={20}/></Link>
         
         <CartBTN/>
       </div>

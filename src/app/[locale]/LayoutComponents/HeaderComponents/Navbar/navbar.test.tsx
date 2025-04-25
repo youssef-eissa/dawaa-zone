@@ -2,6 +2,8 @@ import {render, screen} from '@testing-library/react';
 import {NextIntlClientProvider} from 'next-intl';
 import en_messages from '../../../../../../messages/en.json';
 import ar_messages from '../../../../../../messages/ar.json';
+import { IoCallOutline } from "react-icons/io5";
+
 import Navbar from './navbar';
 import '@testing-library/jest-dom';
 jest.mock('next/navigation', () => ({
@@ -49,6 +51,26 @@ describe('Navbar', () => {
     );
     const element = screen.getByRole("textbox")
     expect(element).toBeInTheDocument();
+  });
+
+  test('should render call link in navbar', () => {
+    render(
+      <NextIntlClientProvider locale='en' messages={en_messages}>
+        <Navbar/>
+      </NextIntlClientProvider>
+    );
+    const element = screen.getByRole("link",{name:"call"})
+    expect(element).toBeInTheDocument(); 
+  });
+
+  test('should render cart button in navbar', () => {
+    render(
+      <NextIntlClientProvider locale='en' messages={en_messages}>
+        <Navbar/>
+      </NextIntlClientProvider>
+    );
+    const element = screen.getByRole("button",{name:"cart"})
+    expect(element).toBeInTheDocument(); 
   });
 
 });
