@@ -1,0 +1,57 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   padding: 20px 80px;
+
+   & > div:nth-of-type(1){
+    position: relative;
+    width: 410px;
+    height: 40px;
+    & svg{
+        position: absolute;
+        inset-inline-start: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: x-large;
+    }
+   
+   }
+
+   & > div:nth-of-type(2){
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    & :is(a,button){
+        border: solid 1px #c1c1c1;
+        width: 40px;
+        aspect-ratio: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    & svg {
+        color: #171717;
+    }
+   }
+}
+
+.cartBTN{
+    position: relative;
+     & > div{
+        position: absolute;
+        top: calc(100% + 10px);
+
+        inset-inline-end: 10px;
+        min-width: 300px;    
+        border-radius: 10px; 
+        min-height: 200px;
+        border: 1px solid #c1c1c1;
+        padding: 10px;
+        z-index: 10;
+        
+
+     }
+}

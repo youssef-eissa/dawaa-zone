@@ -4,6 +4,7 @@ import "./globals.css";
 import {NextIntlClientProvider, hasLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
+import Header from "./LayoutComponents/HeaderComponents/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,9 +23,11 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-  params
+  params,
+  modal
 }: Readonly<{
   children: React.ReactNode;
+  modal: React.ReactNode;
   params: Promise<{locale: string}>;
 
 }>) {
@@ -35,13 +38,15 @@ export default async function RootLayout({
   }
 
   return (
-    <html lang={locale}>
+    <html dir={locale === "ar" ? "rtl" : "ltr"} lang={locale}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
          <NextIntlClientProvider>
+          <Header/>
         {children}
 
+        {modal}
          </NextIntlClientProvider>
       </body>
     </html>

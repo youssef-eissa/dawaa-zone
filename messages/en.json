@@ -1,6 +1,13 @@
 {
-    "HomePage": {
-      "title": "Hello world!",
-      "about": "Go to the about page"
+    "header":{
+      "announcement":{
+        "title":"Summer Sale For All Body Cosmatics And Free Express Delivery - OFF 50%!",
+        "signUp":"Sign Up",
+        "signIn":"Sign In",
+        "shopNow":"Shop Now"
+      },
+      "navbar":{
+        "searchPlaceholder":"Search for products..."
+      }
     }
   }
