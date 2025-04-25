@@ -1,0 +1,25 @@
+.categoriesContainer{
+    padding: 20px 80px;
+
+}
+.categories{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    overflow: auto;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+  
+    &::-webkit-scrollbar {
+      display: none; 
+    }
+    & li{
+        display: flex;
+        flex-shrink: 0;
+        border: solid 1px #c1c1c1;
+        padding: 4px 12px;
+        border-radius: 20px;
+
+    }
+}

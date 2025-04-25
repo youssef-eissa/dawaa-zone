@@ -2,7 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-   padding: 20px 80px;
+    padding: 20px 80px;
+   
 
    & > div:nth-of-type(1){
     position: relative;
