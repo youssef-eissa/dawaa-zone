@@ -12,7 +12,8 @@ async function Categories({locale}:props) {
             categoryEn: true
         }
     })
-    
+
+console.log(await prisma.product.findMany())    
     const categoriesSet=new Set(categories.map((category) => locale==="ar"?category.categoryAr:category.categoryEn))
 
   return <CategoriesSlider categoriesSet={[...categoriesSet]} />
