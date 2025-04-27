@@ -1,8 +1,7 @@
 import user from '@testing-library/user-event'
-import { act, render, screen, waitFor} from '@testing-library/react';
+import { act, render, screen, } from '@testing-library/react';
 import {NextIntlClientProvider} from 'next-intl';
 import en_messages from '../../../../../../messages/en.json';
-import ar_messages from '../../../../../../messages/ar.json';
 import Navbar from './navbar';
 import SearchBar from './components/SearchBar';
 import '@testing-library/jest-dom';
