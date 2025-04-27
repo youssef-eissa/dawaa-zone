@@ -95,10 +95,10 @@ describe('Categories', () => {
         <CategoriesSlider categoriesSet={[...categoriesSet]} />
       </NextIntlClientProvider>
     );
-    const list = screen.getByRole("list")
+    const list = screen.queryByRole("list")
     expect(list).toBeInTheDocument();
 
-    const items = screen.getAllByRole("listitem")
+    const items = screen.queryAllByRole("listitem")
     expect(items).toHaveLength(3);
   });
 

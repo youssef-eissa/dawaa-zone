@@ -56,3 +56,42 @@
 
      }
 }
+
+.searchResult{
+    position: absolute;
+    top: calc(100% + 10px);
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #6C757D;
+    border-radius: 4px;
+    max-height: 200px;
+    background-color: white;
+    overflow: auto;
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+}
+
+
+.searchResultItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 5px ;
+    border: 1px solid #c1c1c1;
+    border-radius: 4px;
+
+    & div:nth-of-type(1){
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        & span:nth-of-type(1){
+            font-size: 10px;
+            color: #6C757D;
+        }
+        & span:nth-of-type(2){
+            font-size: 12px;
+            color: #28A745;
+        }
+    }
+}

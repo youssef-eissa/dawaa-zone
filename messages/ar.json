@@ -8,7 +8,11 @@
 
     },
     "navbar":{
-        "searchPlaceholder":"ابحث عن المنتجات..."
-      }
+        "searchPlaceholder":"ابحث عن المنتجات...",
+        "noSearchResults":"لا يوجد منتجات"
+
+      },
+      "currency":"جنيه مصري"
   }
+
 }

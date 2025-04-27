@@ -7,7 +7,9 @@
         "shopNow":"Shop Now"
       },
       "navbar":{
-        "searchPlaceholder":"Search for products..."
-      }
+        "searchPlaceholder":"Search for products...",
+        "noSearchResults":"No products are found ..."
+      },
+      "currency":"LE"
     }
   }
