@@ -10,6 +10,22 @@
         "searchPlaceholder":"Search for products...",
         "noSearchResults":"No products are found ..."
       },
-      "currency":"LE"
+    "currency":"LE"
+     
+    },
+    "home":{
+      "hero":{
+      "title":"Improving Health With Best Medicines",
+      "subtitle":"Elevate your health with our premium products and unparalleled convenience.",
+      "shopNow":"Shop Now",
+      "topProducts":"Top Products",
+      "fastDelivery":"Fast Delivery, Anytime And Anywhere",
+      "fastDeliverySubtitle":"Order your medicines and health essentials with same-day delivery across Egypt.",
+      "orderNow":"Order Now",
+      "needHelp":"Need Help Choosing? Talk to Us.",
+      "needHelpSubTitle":"Free consultations with licensed pharmacists — just a click away.",
+      "call":"Consult a Pharmacist"
     }
+    }
+
   }

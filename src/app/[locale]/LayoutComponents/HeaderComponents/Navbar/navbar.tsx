@@ -15,8 +15,9 @@ function Navbar() {
   
   return (
     <nav className={styles.navbar}>
-      <Link href={'/'}>
-      <Image src={logo} alt='logo' width={150} height={100}/>
+      <Link className='' href={'/'}>
+      <Image priority quality={100} src={logo} alt='logo' 
+      width={150} height={60}/>
       </Link>
       <SearchBar/>
       <div>

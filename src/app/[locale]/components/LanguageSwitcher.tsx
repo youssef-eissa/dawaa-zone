@@ -50,15 +50,18 @@ export function LanguageSwitcher() {
 }
   return (
     <Select   value={activeLocale} onValueChange={(value) => handleLanguageChange(value)}>
-      <SelectTrigger value={activeLocale} className=" ring-0 focus:ring-0 focus-visible:ring-0 focus-visible:!border-white cursor-pointer">
+      <SelectTrigger aria-label="Language"  value={activeLocale} className=" ring-0 focus:ring-0 focus-visible:ring-0 focus-visible:!border-white cursor-pointer">
         <SelectValue   />
       </SelectTrigger>
       <SelectContent >
         <SelectGroup >
           {locales.map(locale=>(
-            <SelectItem key={locale.id} className="focus:text-white focus:bg-mainColor focus:[&_svg]:!text-white [&_svg:not([class*='text-'])]:text-mainColor  flex items-center justify-center gap-2 hover:!bg-mainColor hover:!text-white transition-all duration-300 cursor-pointer" value={locale.value}>
-            <Image src={locale.flag} width={20} height={20} alt={locale.name+" flag"} />
-            <span>{locale.name}</span>
+            <SelectItem  key={locale.id} className="focus:text-white focus:bg-mainColor focus:[&_svg]:!text-white [&_svg:not([class*='text-'])]:text-mainColor  flex items-center justify-center gap-2 hover:!bg-mainColor hover:!text-white transition-all duration-300 cursor-pointer " value={locale.value}>
+              <div className="relative ">
+            <Image sizes="20px" priority src={locale.flag} width={20} height={20} alt={locale.name+" flag"} />
+
+              </div>
+            <span className="text-white opacity-100">{locale.name}</span>
           </SelectItem>
           ))}
           

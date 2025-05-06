@@ -4,7 +4,7 @@
 @theme {
     --font-display: "Satoshi", "sans-serif";
     --breakpoint-3xl: 120rem;
-    --color-mainColor: oklch(60.48% 0.217 257.21);
+    --color-mainColor: oklch(0.52 0.1608 256.28);
     --color-secondaryColor: oklch(64.01% 0.175 146.74);
     --color-actionColor: oklch(79.72% 0.164 69.62);
     --color-actionColor: oklch(79.72% 0.164 69.62);
@@ -50,6 +50,22 @@
     --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
     --color-sidebar-border: var(--sidebar-border);
     --color-sidebar-ring: var(--sidebar-ring);
+}
+.swiper-pagination-bullet{
+  background-color: white !important;
+  opacity: 0.5 !important;
+  transition: opacity 0.3s ease-in-out !important;
+  width: 16px !important;
+  height: 16px !important;
+  margin: 6px !important;
+
+}
+
+
+.swiper-pagination{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 :root {

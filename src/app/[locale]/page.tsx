@@ -1,10 +1,11 @@
-import Hero from "./home-components/Hero";
+import Hero from "./home-components/hero/Hero";
+import styles from './home-components/styles.module.css'
 
  
 export default function HomePage() {
   return (
-    <div className="">
+    <main className={styles.home}>
       <Hero/>
-    </div>
+    </main>
   );
 }

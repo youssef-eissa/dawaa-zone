@@ -1,0 +1,119 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+
+    & > section:not(:first-of-type){
+    padding: 20px 80px;
+
+    }
+}
+
+.hero{
+    background: linear-gradient(135deg, #007BFF 0%, #28C1A7 50%, #28A745 100%);
+    height: 500px;
+}
+
+.swiper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+/* first slide */
+.links{
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    & a {
+        padding: 12px;
+        border-radius: 20px;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+    }
+    & a:nth-of-type(1){
+        background-color: var(--color-mainColor);
+        color: white;
+        border: 1px solid var(--color-mainColor);
+        
+    }
+    & a:nth-of-type(2){
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+    }
+   
+
+}
+
+/* first slide */
+
+/* second slide */
+.orderNow{
+    background: var(--color-mainColor);
+    padding: 12px;
+    border-radius: 20px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+/* second slide */
+
+.bulletActive{
+    background-color: red !important;
+}
+.activeBullet{
+    background-color: white !important;
+    opacity: 1 !important;
+    transition: opacity 0.3s ease-in-out !important;
+    border-radius: 5px !important;
+    width: 20px !important;
+    height: 10px !important;
+  }
+
+  .slideNext{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    z-index: 10;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: transparent;
+    & svg{
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 10px;
+    }
+  }
+
+
+  .slidePrev{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+
+    left: 10px;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: transparent;
+    & svg{
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        right: -40px;
+    }
+  }
+
