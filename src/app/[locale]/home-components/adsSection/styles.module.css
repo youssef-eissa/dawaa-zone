@@ -1,0 +1,16 @@
+.ads{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    & > a{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        height: 300px;
+        & img {
+            object-fit: fill;
+        border-radius: 20px;
+            
+        }
+    }
+}
