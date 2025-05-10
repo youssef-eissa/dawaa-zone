@@ -1,0 +1,35 @@
+.features{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.featureBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    & >span{
+        width: 60px;
+        height:60px;
+        border-radius: 50%;
+        background-color: var(--color-accent);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color-mainColor);
+    }
+    & >div{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        & h3 {
+            font-weight: bold;
+            font-size: 18px;
+        }
+         & span {
+            font-weight: 400;
+            color: var(--color-textColor);
+        }
+    }
+}

@@ -25,6 +25,24 @@
       "needHelp":"Need Help Choosing? Talk to Us.",
       "needHelpSubTitle":"Free consultations with licensed pharmacists — just a click away.",
       "call":"Consult a Pharmacist"
+    },
+    "features":{
+      "freeShippingBox":{
+        "title":"Free Shipping & Returns",
+        "text":"For all orders over $99"
+      },
+      "securePaymentBox":{
+        "title":"Secure Payment",
+        "text":"We ensure secure payment"
+      },
+       "moneyBackBox":{
+        "title":"Money Back Guarantee",
+        "text":"Returning money within 30 days"
+      },
+       "customerSupportBox":{
+        "title":"24/7 Customer Support",
+        "text":"Friendly customer support"
+      }
     }
     }
 
