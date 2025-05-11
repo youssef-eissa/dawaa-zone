@@ -2,6 +2,7 @@ import AdsSection from "./home-components/adsSection/AdsSection";
 import Features from "./home-components/features/Features";
 import Hero from "./home-components/hero/Hero";
 import styles from './home-components/styles.module.css'
+import TrendingProducts from "./home-components/trending-products/TrendingProducts";
 
 type props={
   params:Promise<{locale:string}>
@@ -15,6 +16,7 @@ export default async function HomePage({params}:props) {
       <Hero/>
       <Features/>
       <AdsSection locale={locale}/>
+      <TrendingProducts locale={locale}/>
     </main>
   );
 }

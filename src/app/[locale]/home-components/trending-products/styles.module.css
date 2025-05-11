@@ -1,0 +1,60 @@
+.trendingProducts{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.trendingProductsContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+
+    & > div{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        padding: 8px;
+        border: 1px solid var(--color-border);
+        border-radius: 8px;
+        & img {
+            height: 250px;
+            width: 100%;
+            object-fit: fill;
+        }
+        & h4 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+}
+
+.cartBottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & >div{
+        display: flex;
+        gap: 8px;
+        align-items: center;
+
+        & del{
+            color: var(--color-textColor);
+            font-size: 14px;
+        }
+        & span{
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+    & button{
+        background-color: var(--color-mainColor);
+        width: 40px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+}
