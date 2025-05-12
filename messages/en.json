@@ -46,6 +46,15 @@
     },
       "trendingProducts":{
         "title":"Trending Products"
+      },
+      "offers":{
+        "off":"25% OFF",
+        "garlicTitle":"Garlic black oil",
+        "garlicText":"Stronger and Thicker Hair With Black Garlic Oil",
+          "dentalTitle":"Dental Care Set for vivid and Bright Smiles",
+        "dentalText":"Get a healthy smile with our dental care set",
+         "bananaTitle":"Banana flavoured toothpaste",
+        "bananaText":"Get a premium taste with our banana flavoured toothpaste"
       }
     },
     "sectionHead":{

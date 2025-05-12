@@ -1,6 +1,7 @@
 import AdsSection from "./home-components/adsSection/AdsSection";
 import Features from "./home-components/features/Features";
 import Hero from "./home-components/hero/Hero";
+import Offers from "./home-components/offers-section/Offers";
 import styles from './home-components/styles.module.css'
 import TrendingProducts from "./home-components/trending-products/TrendingProducts";
 
@@ -17,6 +18,7 @@ export default async function HomePage({params}:props) {
       <Features/>
       <AdsSection locale={locale}/>
       <TrendingProducts locale={locale}/>
+      <Offers/>
     </main>
   );
 }
